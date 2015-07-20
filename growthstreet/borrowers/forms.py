@@ -6,7 +6,7 @@ from growthstreet.borrowers.models import Borrower, Company
 
 
 class BorrowerForm(forms.ModelForm):
-    phonenumber = PhoneNumberField()
+    phonenumber = PhoneNumberField(label='Phone number')
 
     class Meta:
         model = Borrower
